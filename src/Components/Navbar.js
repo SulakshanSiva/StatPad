@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import "../Styles/Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
+    <div className="navbar">
+        <nav>
+            <h1>
+                <a className='header'>Stat</a>
+                <a className='header secondHeader'>Pad</a>
+            </h1>
+        </nav>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
+  

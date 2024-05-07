@@ -1,0 +1,21 @@
+$main-color: #0074D9;
+
+.navbar{
+
+    nav{
+        display: flex; 
+        justify-content: space-between; 
+        padding: 1rem 2rem;
+        background-color: white;
+
+        h1{
+            font-size: xx-large;
+            .header{
+
+            }
+            .secondHeader{
+                color: #0074D9;
+            }
+        }
+    }
+}
