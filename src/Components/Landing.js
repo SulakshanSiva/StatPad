@@ -1,5 +1,7 @@
 import React from 'react'
 import "../Styles/Landing.scss"
+import { Link } from 'react-router-dom';
+
 
 const Landing = () => {
   return (
@@ -18,7 +20,7 @@ const Landing = () => {
           <p className='keyWord'>Statistics</p>
         </div>
        
-        <button className='btn'>Head Here!</button>
+        <Link to="/home" className='btn'>Head Here!</Link>
       </div>
 
       <div className='image'>
