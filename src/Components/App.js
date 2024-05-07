@@ -4,7 +4,7 @@ import Landing from './Landing';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Landing/>
     </div>
   );

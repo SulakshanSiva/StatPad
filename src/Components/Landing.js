@@ -4,7 +4,7 @@ import "../Styles/Landing.scss"
 const Landing = () => {
   return (
     <div className='landing'>
-      <div className="white-square">
+      <div className="white-background">
 
         <div className='header'>
           <h1>Stat</h1>
@@ -19,6 +19,10 @@ const Landing = () => {
         </div>
        
         <button className='btn'>Head Here!</button>
+      </div>
+
+      <div className='image'>
+
       </div>
     </div>
   )

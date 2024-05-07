@@ -1,24 +1,18 @@
 $main-color: #0074D9;
 
 .landing {
-    height: 100vh;
-    background-image: url('../Assets/Images/haaland.jpeg');
-    background-size: cover; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .white-square {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // align-items: center;
-        width: 500px; 
-        height: 400px; 
-        background-color: white;
-        border-radius: 10px; 
+    
+    .white-background {
+        flex: 4;
+        background-color: white; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
         
         .header{
+            margin-bottom: 15px;
             h1{
                 display: inline;
             }
@@ -29,6 +23,7 @@ $main-color: #0074D9;
         }
         
         .slogan{
+            margin-bottom: 5px;
             p{
                 display: inline;
                 margin: 1px;
@@ -71,4 +66,21 @@ $main-color: #0074D9;
         }
 
     }
+
+    .image{
+        flex: 6; /* Make the image div grow to fill the available space */
+        height: 100vh;
+        background-image: url('../Assets/Images/haaland.jpeg');
+        background-size: cover; 
+        background-position: center;
+    }
+
+    @media (max-width: 750px) {
+        .white-background{
+            .slogan{
+                display: none;
+            }
+        }
+    }
+
 }
