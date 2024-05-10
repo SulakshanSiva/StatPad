@@ -69,14 +69,13 @@ const ClubComparision = () => {
             {stats && stats.length > 0 ? 
               stats.map((player, index) => (
                 <tr key={index}>
-                  <td>{player['Player Name']}</td>
+                  <td>{player.Player_Name}</td>
                   <td>{player.Age}</td>
                   <td>{player.Position}</td>
-                  <td>{player['Matches Played']}</td>
+                  <td>{player.Matches_Played}</td>
                   <td>{player.Goals}</td>
                   <td>{player.Assists}</td>
-                  <td>{player['xG per 90']}</td>
-                  
+                  <td>{player.xG_per_90}</td>
                 </tr>
               ))
               :
