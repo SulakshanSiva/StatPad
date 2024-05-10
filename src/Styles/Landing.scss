@@ -2,6 +2,7 @@ $main-color: #0074D9;
 
 .landing {
     display: flex;
+    overflow-y: hidden;
     
     .white-background {
         flex: 4;
