@@ -54,13 +54,13 @@ const ClubComparision = () => {
         </select>
       </div>
 
-      <div className='displayStat'>
-
-        <div className='description'>
+      <div className='description'>
           <p>The following is a table that contains the statistics for Premier League Clubs in the 2022/23 Season.</p>
-          <p>Select a club from the dropdown menu above to see their statistics!</p>
-        </div>
-        
+          <p>Select a club from the dropdown menu above to see their statistics.</p>
+          <p>Scroll down the table to view all the players!</p>
+      </div>
+
+      <div className='displayStat'>
 
         <table>
           <thead>

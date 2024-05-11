@@ -7,17 +7,16 @@
     .selectStat{
         margin-top: 50px;
     }
-  
-    .displayStat {
-        
-        .description{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 
+    .displayStat {
         width: calc(100% - 20px); 
         max-height: 400px; 
         overflow: auto; 

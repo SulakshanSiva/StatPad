@@ -54,29 +54,36 @@ const PlayerComparison = () => {
 
     const handleInputChange1 = (event) => {
         setSearchTerm1(event.target.value);
-        setSelectedPlayer1(null); // Reset selected player1 when typing a new name
+        setSelectedPlayer1(null); 
     };
 
     const handleInputChange2 = (event) => {
         setSearchTerm2(event.target.value);
-        setSelectedPlayer2(null); // Reset selected player2 when typing a new name
+        setSelectedPlayer2(null); 
     };
 
     const handlePlayerSelect1 = (name) => {
         setSearchTerm1(name);
-        getPlayerStats(name, setPlayerStat1); // Call getPlayerStats with the selected player1's name
-        setSelectedPlayer1(name); // Set the selected player1
+        getPlayerStats(name, setPlayerStat1); 
+        setSelectedPlayer1(name); 
     };
 
     const handlePlayerSelect2 = (name) => {
         setSearchTerm2(name);
-        getPlayerStats(name, setPlayerStat2); // Call getPlayerStats with the selected player2's name
-        setSelectedPlayer2(name); // Set the selected player2
+        getPlayerStats(name, setPlayerStat2);
+        setSelectedPlayer2(name); 
     };
 
     return (
         <div className='player'>
             <h1>Player Comparison</h1>
+
+            <div className='description'>
+                <p>The following is a table that contains the statistics for Premier League Clubs in the 2022/23 Season.</p>
+                <p>Select a club from the dropdown menu above to see their statistics.</p>
+                <p>Scroll down the table to view all the players!</p>
+            </div>
+
             <div className="comparison">
                 <div className="player-1">
                     <input
