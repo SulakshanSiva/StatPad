@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
+import "../Styles/ClubComp.scss";
 
 const ClubComparision = () => {
   const [selectedClub, setSelectedClub] = useState("");
@@ -31,6 +32,7 @@ const ClubComparision = () => {
 
   return (
     <div className='club'>
+
       <div className='selectStat'>
         <select name="club" id="club" onChange={handleClubChange} value={selectedClub}>
           <option value="" disabled>Select Club</option>
@@ -53,6 +55,13 @@ const ClubComparision = () => {
       </div>
 
       <div className='displayStat'>
+
+        <div className='description'>
+          <p>The following is a table that contains the statistics for Premier League Clubs in the 2022/23 Season.</p>
+          <p>Select a club from the dropdown menu above to see their statistics!</p>
+        </div>
+        
+
         <table>
           <thead>
             <tr>
@@ -80,7 +89,7 @@ const ClubComparision = () => {
               ))
               :
               <tr key="loading">
-                <td colSpan="7">Loading...</td>
+                <td colSpan="7">Select A Club Above!</td>
               </tr>
             }
           </tbody>
